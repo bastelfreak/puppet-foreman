@@ -182,6 +182,7 @@ class foreman::params {
       $puppet_etcdir = '/etc/puppetlabs/puppet'
       $puppet_home = '/var/lib/puppet'
       $passenger_ruby = undef
+      $passenger_ruby_package = undef
     }
     /^(FreeBSD|DragonFly)$/: {
       $puppet_basedir = regsubst($::rubyversion, '^(\d+\.\d+).*$', '/usr/local/lib/ruby/site_ruby/\1/puppet')
